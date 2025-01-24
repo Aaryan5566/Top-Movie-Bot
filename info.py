@@ -15,9 +15,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', '')
-API_ID = int(environ.get('API_ID', '22505271'))
-API_HASH = environ.get('API_HASH', 'c89a94fcfda4bc06524d0903977fc81e')
-BOT_TOKEN = environ.get('BOT_TOKEN', "7339639307:AAGdsIoowuIxMB-t1LmwLx2UfgE6jg_xHJo")
+API_ID = int(environ.get('API_ID', '23378704'))
+API_HASH = environ.get('API_HASH', '15a02b4d02babeb79e8f328b0ead0c17')
+BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
@@ -27,9 +27,9 @@ MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/c10c46e6255fe65d9
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
 
 # Admins, Channels & Users
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002027563292'))
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6695586027').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002027563292').split()]
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002337461849'))
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7364818327').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
@@ -48,7 +48,7 @@ FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-100
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://ultroidxTeam:ultroidxTeam@cluster0.gabxs6m.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://rohtashkumarsharma1994:NxNSQqdRkE8gHVHB@cluster0.5gatz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0i7hjvjb")
 DATABASE_NAME = environ.get('DATABASE_NAME', "phdlust")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'uxbcollection')
 
